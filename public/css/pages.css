@@ -1,0 +1,35 @@
+/* Add your custom styles here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sphere-hub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sphere-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.karma-counter {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.event-feed {
+    margin-top: 20px;
+}
+
+.event {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
