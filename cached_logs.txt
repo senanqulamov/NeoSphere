@@ -1,0 +1,18 @@
+$table->ulid('id')->primary();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->string('title')->nullable();
+            $table->unsignedInteger('karma_points')->default(0);
+            $table->unsignedSmallInteger('karma_quants')->default(0);
+            $table->string('profile_picture')->nullable(); // Add profile picture field
+            $table->string('bio', 500)->nullable(); // Add bio field with a max length of 500
+            $table->boolean('is_verified')->default(false); // Add verification status
+            $table->boolean('is_admin')->default(false); // Add admin status
+            $table->timestamp('email_verified_at')->nullable();
+            $table->rememberToken();
+            $table->timestamps();
+            $table->softDeletes();
+
+
+HandleEvents.php /Livewire
